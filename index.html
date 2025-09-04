@@ -37,25 +37,23 @@
   <link rel="stylesheet" href="style.css">
   
   <style>
-    /* Logo frame so all logos fit nicely */
-.card .img {
-  height: 180px;              /* frame height */
+    .card .img {
+  width: 180px;               /* square width */
+  height: 180px;              /* square height */
+  margin: 0 auto;             /* center the square itself in the card */
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;           /* clean white box */
+  align-items: center;        /* center vertically */
+  justify-content: center;    /* center horizontally */
+  background: #fff;
   border-radius: 8px;
-  padding: 8px;               /* some breathing room */
 }
 
-/* Logo inside the frame */
 .card .img img {
-  max-height: 160px;
-  max-width: 100%;
+  max-width: 90%;             /* keep some padding inside */
+  max-height: 90%;            /* keep proportions inside */
   width: auto;
   height: auto;
   object-fit: contain;        /* never crop */
-  display: block;
 }
   </style>
 </head>
@@ -407,6 +405,7 @@
 </body>
 
 </html>
+
 
 
 
