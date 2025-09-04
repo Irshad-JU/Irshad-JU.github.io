@@ -37,14 +37,24 @@
   <link rel="stylesheet" href="style.css">
   
   <style>
-    .card img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
-      max-height: 200px;
-      display: block;
-      margin: 0 auto;
-    }
+    /* Logo frame so all logos fit nicely */
+.card .img {
+  height: 180px;                 /* the frame height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;              /* clean white box */
+  border-radius: 8px;
+}
+
+/* Logo inside the frame */
+.card .img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;           /* never crop */
+}
   </style>
 </head>
 <body>
@@ -212,4 +222,5 @@
 </body>
 
 </html>
+
 
