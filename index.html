@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irshad-JU • Links Hub</title>
+<style>
+  :root { --bg:#f7f9fc; --card:#ffffff; --text:#0f172a; --muted:#475569; --ring:#0ea5e9; }
+  *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  .wrap{max-width:1100px;margin:0 auto;padding:16px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:12px 0;border-bottom:1px solid #e5e7eb}
+  header h1{margin:0;font-size:20px}
+  nav a{margin-left:12px;text-decoration:none}
+  h2{margin:24px 0 12px}
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+  .card{background:var(--card);border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04);transition:.12s}
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 20px rgba(0,0,0,.06)}
+  .card a.img{display:block}
+  .card img{width:100%;height:170px;object-fit:cover;display:block;background:#eef2f7}
+  .card .body{padding:10px 12px}
+  .card .body h3{margin:0 0 6px;font-size:16px}
+  .card .body p{margin:0;color:var(--muted);font-size:14px}
+  .list{display:grid;gap:12px}
+  .row{display:grid;grid-template-columns:110px 1fr;gap:12px;background:var(--card);border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+  .row img{width:110px;height:100%;object-fit:cover;background:#eef2f7}
+  .row .body{padding:10px 12px}
+  .row .body a{font-weight:600;text-decoration:none}
+  footer{margin:28px 0 8px;text-align:center;color:var(--muted);border-top:1px solid #e5e7eb;padding-top:12px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 14px}
+  .chip{border:1px solid #cbd5e1;border-radius:999px;padding:4px 10px;background:#fff;font-size:13px}
+  @media (max-width:900px){ .grid{grid-template-columns:repeat(2,1fr)} .row{grid-template-columns:90px 1fr} }
+  @media (max-width:600px){ .grid{grid-template-columns:1fr} .row{grid-template-columns:1fr} .row img{width:100%;height:160px} }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Irshad-JU • Links Hub</h1>
+      <nav>
+        <a href="#teams">Teams</a>
+        <a href="#interest">Interest Groups</a>
+        <a href="#public">Public Volunteering</a>
+      </nav>
+    </header>
+
+    <!-- TEAMS (3 cards) -->
+    <section id="teams">
+      <h2>Teams</h2>
+      <div class="chips"><span class="chip">Internal</span><span class="chip">Student-run</span></div>
+      <div class="grid">
+        <!-- Team 1 -->
+        <article class="card">
+          <a class="img" href="https://facebook.com/TEAM1" target="_blank" rel="noopener">
+            <img src="https://picsum.photos/seed/team1/800/500" alt="Team 1">
+          </a>
+          <div class="body">
+            <h3><a href="https://team1.example.com" target="_blank" rel="noopener">Team 1</a></h3>
+            <p>Facebook • Website • Contact</p>
+          </div>
+        </article>
+        <!-- Team 2 -->
+        <article class="card">
+          <a class="img" href="https://facebook.com/TEAM2" target="_blank" rel="noopener">
+            <img src="https://picsum.photos/seed/team2/800/500" alt="Team 2">
+          </a>
+          <div class="body">
+            <h3><a href="https://team2.example.com" target="_blank" rel="noopener">Team 2</a></h3>
+            <p>Facebook • Website • Contact</p>
+          </div>
+        </article>
+        <!-- Team 3 -->
+        <article class="card">
+          <a class="img" href="https://facebook.com/TEAM3" target="_blank" rel="noopener">
+            <img src="https://picsum.photos/seed/team3/800/500" alt="Team 3">
+          </a>
+          <div class="body">
+            <h3><a href="https://team3.example.com" target="_blank" rel="noopener">Team 3</a></h3>
+            <p>Facebook • Website • Contact</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTEREST GROUPS (stacked rows) -->
+    <section id="interest">
+      <h2>Interest Groups</h2>
+      <div class="list">
+<!-- IG 1 -->
+        <div class="row">
+          <img src="https://picsum.photos/seed/ig1/600/400" alt="Cardio IG">
+          <div class="body">
+            <a href="https://instagram.com/CARDIO_IG" target="_blank" rel="noopener">Cardiology Interest Group</a>
+            <p>Links: <a href="https://cardio-ig.example.com" target="_blank" rel="noopener">Website</a> •
+               <a href="https://facebook.com/CARDIO_IG" target="_blank" rel="noopener">Facebook</a></p>
+          </div>
+        </div>
+        <!-- IG 2 -->
+        <div class="row">
+          <img src="https://picsum.photos/seed/ig2/600/400" alt="Surgery IG">
+          <div class="body">
+            <a href="https://instagram.com/SURGERY_IG" target="_blank" rel="noopener">Surgery Interest Group</a>
+            <p>Links: <a href="https://surgery-ig.example.com" target="_blank" rel="noopener">Website</a> •
+               <a href="https://facebook.com/SURGERY_IG" target="_blank" rel="noopener">Facebook</a></p>
+          </div>
+        </div>
+        <!-- IG 3 -->
+        <div class="row">
+          <img src="https://picsum.photos/seed/ig3/600/400" alt="Pediatrics IG">
+          <div class="body">
+            <a href="https://instagram.com/PEDS_IG" target="_blank" rel="noopener">Pediatrics Interest Group</a>
+            <p>Links: <a href="https://peds-ig.example.com" target="_blank" rel="noopener">Website</a> •
+               <a href="https://facebook.com/PEDS_IG" target="_blank" rel="noopener">Facebook</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLIC VOLUNTEERING (stacked rows) -->
+    <section id="public">
+      <h2>Public Volunteering</h2>
+      <div class="list">
+        <!-- Org 1 -->
+        <div class="row">
+          <img src="https://picsum.photos/seed/vol1/600/400" alt="Charity A">
+          <div class="body">
+            <a href="https://charity-a.example.com" target="_blank" rel="noopener">Charity A</a>
+            <p>Helps with tuition support and essentials.</p>
+          </div>
+        </div>
+        <!-- Org 2 -->
+        <div class="row">
+          <img src="https://picsum.photos/seed/vol2/600/400" alt="Charity B">
+          <div class="body">
+            <a href="https://charity-b.example.com" target="_blank" rel="noopener">Charity B</a>
+            <p>Food, shelter, and orphan support programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <small>&copy; <span id="y"></span> Irshad-JU</small>
+    </footer>
+  </div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
