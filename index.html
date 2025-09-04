@@ -38,22 +38,17 @@
   
   <style>
     .card .img {
-  width: 180px;               /* square width */
-  height: 180px;              /* square height */
-  margin: 0 auto;             /* center the square itself in the card */
   display: flex;
-  align-items: center;        /* center vertically */
-  justify-content: center;    /* center horizontally */
+  align-items: center;     /* vertical center */
+  justify-content: center; /* horizontal center */
   background: #fff;
   border-radius: 8px;
 }
 
 .card .img img {
-  max-width: 90%;             /* keep some padding inside */
-  max-height: 90%;            /* keep proportions inside */
-  width: auto;
-  height: auto;
-  object-fit: contain;        /* never crop */
+  width: 100%;             /* fill the card’s width like Teams */
+  height: auto;            /* keep aspect ratio */
+  display: block;
 }
   </style>
 </head>
@@ -405,6 +400,7 @@
 </body>
 
 </html>
+
 
 
 
