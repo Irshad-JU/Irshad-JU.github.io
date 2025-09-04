@@ -39,21 +39,23 @@
   <style>
     /* Logo frame so all logos fit nicely */
 .card .img {
-  height: 180px;                 /* the frame height */
+  height: 180px;              /* frame height */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;              /* clean white box */
+  background: #fff;           /* clean white box */
   border-radius: 8px;
+  padding: 8px;               /* some breathing room */
 }
 
 /* Logo inside the frame */
 .card .img img {
-  max-height: 100%;
+  max-height: 160px;
   max-width: 100%;
   width: auto;
   height: auto;
-  object-fit: contain;           /* never crop */
+  object-fit: contain;        /* never crop */
+  display: block;
 }
   </style>
 </head>
@@ -405,6 +407,7 @@
 </body>
 
 </html>
+
 
 
 
