@@ -37,24 +37,32 @@
   <link rel="stylesheet" href="style.css">
   
   <style>
-  /* 1) Make padding count inside widths (prevents overflow) */
-  *, *::before, *::after { box-sizing: border-box; }
+ /* Layout safety: no horizontal scroll, proper wrapping */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { width: 100%; overflow-x: hidden; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+img { max-width: 100%; height: auto; }
 
-  /* 2) Keep the whole page inside the viewport */
-  html, body { width: 100%; overflow-x: hidden; }
+/* ---------- Academic Teams (keeps your original look) ---------- */
+#teams .card { background:#fff; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow:hidden; }
+#teams .card .img { padding: 12px; display:flex; align-items:center; justify-content:center; }
+#teams .card .img img { max-height: 210px; width:auto; height:auto; object-fit:contain; }
 
-  /* 3) Constrain the content width and add side padding */
-  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+/* ---------- INTEREST GROUPS (centered, same size, no overflow) ---------- */
+#interest .card { background:#fff; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow:hidden; }
+#interest .card .img { padding: 16px; display:flex; align-items:center; justify-content:center; }
+#interest .card .img img { max-height: 210px; width:auto; height:auto; object-fit:contain; }
 
-  /* 4) Responsive grid that never overflows */
-  .grid {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
+/* ---------- CHARITIES ---------- */
+#charities .card { background:#fff; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow:hidden; }
+#charities .card .img { padding: 16px; display:flex; align-items:center; justify-content:center; }
+#charities .card .img img { max-height: 210px; width:auto; height:auto; object-fit:contain; }
 
-  /* Safety: images never exceed their boxes */
-  img { max-width: 100%; height: auto; }
+/* ---------- MEDICAL VOLUNTEERING ---------- */
+#medical-volunteering .card { background:#fff; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.06); overflow:hidden; }
+#medical-volunteering .card .img { padding: 16px; display:flex; align-items:center; justify-content:center; }
+#medical-volunteering .card .img img { max-height: 210px; width:auto; height:auto; object-fit:contain; }
 </style>
 </head>
 <body>
@@ -522,6 +530,7 @@
 </body>
 
 </html>
+
 
 
 
